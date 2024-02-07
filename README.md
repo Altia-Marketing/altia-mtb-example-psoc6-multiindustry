@@ -2,6 +2,15 @@
 
 This readme describes the steps necessary to build Altia Multi-Industry Demo for Infineon PSoC&trade; 6 Evaluation Board, CY8CKIT-062S2-43012, utilizing CY8CKIT-028-TFT display.
 
+## Learn More about Altia Solutions for Infineon PSoC&trade; 6
+
+If you want to understand how the GUI is made and how code generation happens, and if you like create your own GUI for Infineon PSoC&trade; 6 using Altia:
+1. Reach out to info@altia.com to obtain Altia GUI design tool software.
+2. Use the Altia invitation email to create your account.
+3. After creation, download and install the Altia Launcher (available after account creation on our website).
+
+See ["Step-by-step instructions to build the Altia GUI"](#step-by-step-instructions-to-build-the-altia-gui) later in this document to understand how the GUI part of the demo is created using Altia Solution (Altia Design graphical UI editor and Altia Cloud Code Genertation).
+
 ## Requirements
 - [ModusToolbox™ software](https://www.infineon.com/modustoolbox) v3.0.0 or later (tested with v3.0.0)
 - Board support package (BSP) minimum required version: v4.0.0
@@ -16,13 +25,6 @@ This readme describes the steps necessary to build Altia Multi-Industry Demo for
 
 ## Supported kits
 - PSoC™ 62S2 Wi-Fi Bluetooth® pioneer kit (CY8CKIT-062S2-43012) + Display (CY8CKIT-028-TFT)
-
-## Installation
-For this demo, you need to:
-1. Download and install ModusToolBox&trade;.
-2. Request from [Infineon ModusToolBox&trade; Access to Altia Design](https://altia.com/resources/infineon-modustoolbox-access-to-altia-design/?utm_campaign=2023-05-InfineonModusTB&amp;utm_medium=partner&amp;utm_source=infineon) to obtain Altia GUI design tool software.
-3. Use the Altia invitation email to create your account.
-4. After creation, download and install the Altia Launcher (available after account creation on our website).
 
 ## Demo System
 - Board Required: [PSoC™ 6 EVB (CY8CKIT-062S2-43012)](https://www.infineon.com/cms/en/product/evaluation-boards/cy8ckit-062s2-43012)
@@ -118,7 +120,7 @@ For a list of supported IDEs and more details, see the "Exporting to IDEs" secti
 
 </details>
 
-## Step-by-step instructions to build the application
+## Step-by-step instructions to build the Altia GUI
 
 1. Open Altia Launcher by entering the credentials and logging into your account.
 
@@ -201,7 +203,7 @@ To incorporate the Altia library into a ModusToolbox&trade; application here are
 
 2. Refer to the User Guides available in the "Altia Support" menu in Altia Launcher to create your own GUI. Contact Altia support for any queries on using the tool.
 
-3. Create a folder in your application root folder and have Altia Launcher download the generated files into this folder. This is similar to the [steps](#step-by-step-instructions-to-build-the-application) followed when building the code example.
+3. Create a folder in your application root folder and have Altia Launcher download the generated files into this folder. This is similar to the [steps](#step-by-step-instructions-to-build-the-altia-gui) followed when building the code example.
 
 4. Create a prebuild command to generate relocatable object files and binaries that will be used for partial linking. Repeat this command for all other object files as needed. Here `HMI_DIR` is a user defined variable to point to the folder created in the previous step that contains the generated files. See [Makefile](./Makefile) for more information.
    ```
