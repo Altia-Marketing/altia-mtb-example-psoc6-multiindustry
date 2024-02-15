@@ -139,7 +139,7 @@ LINKER_SCRIPT=
 ifeq ("$(wildcard $(HMI_DIR))", "")
 $(warning "Note: ByteSizedDemo directory doesn't exist. Create this folder and use Altia Launcher to generate files within it")
 else
-PREBUILD=$(CY_TOOLS_PATHS)/gcc/bin/arm-none-eabi-ld.exe -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/altia_table_bin.o $(HMI_DIR)/out/reflash/$(HMI)/table.bin; $(CY_TOOLS_PATHS)/gcc/bin/arm-none-eabi-ld -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/images/altia_images_bin.o $(HMI_DIR)/out/reflash/$(HMI)/images/altiaImageDataPartition0.bin; $(CY_TOOLS_PATHS)/gcc/bin/arm-none-eabi-ld -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/fonts/altia_fonts_bin.o $(HMI_DIR)/out/reflash/$(HMI)/fonts/altiaImageDataPartition0.bin;
+PREBUILD=$(CY_TOOLS_DIR)/gcc/bin/arm-none-eabi-ld.exe -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/altia_table_bin.o $(HMI_DIR)/out/reflash/$(HMI)/table.bin; $(CY_TOOLS_DIR)/gcc/bin/arm-none-eabi-ld -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/images/altia_images_bin.o $(HMI_DIR)/out/reflash/$(HMI)/images/altiaImageDataPartition0.bin; $(CY_TOOLS_DIR)/gcc/bin/arm-none-eabi-ld -r -b binary -o $(HMI_DIR)/out/reflash/$(HMI)/fonts/altia_fonts_bin.o $(HMI_DIR)/out/reflash/$(HMI)/fonts/altiaImageDataPartition0.bin;
 endif
 
 # Custom post-build commands to run.
